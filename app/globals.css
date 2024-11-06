@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #16033e;
+  color: white;
+  overscroll-behavior: none;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #333;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .h-image {
+    --mask-size: 300px 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .h-image {
+    --mask-size: 300px 300px;
+  }
+}
+
+@media (max-width: 415px) {
+  .h-image {
+    --mask-size: 270px 270px;
+  }
+}
+
+.std-backdrop-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
