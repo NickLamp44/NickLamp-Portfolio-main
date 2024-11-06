@@ -1,3 +1,12 @@
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   content: [],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// };
+
 const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",

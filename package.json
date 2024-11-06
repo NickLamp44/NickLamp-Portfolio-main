@@ -1,5 +1,5 @@
 {
-  "name": "NickLamp-Portfolio-Main",
+  "name": "nicklamp-portfolio-main",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,7 @@
     "blobity": "^0.2.3",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.2.10",
-    "next": "14.2.15",
+    "next": "^14.2.15",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",
