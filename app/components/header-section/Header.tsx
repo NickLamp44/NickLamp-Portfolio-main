@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       <div className="fixed max-w-[90%] xl:max-w-[1223px] w-full z-10 select-none">
-        <div className="flex justify-between items-center px-6 py-4 rounded-2xl">
+        <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-[#3d0076] to-[#5203a2] mt-4 sm:mt-8 std-backdrop-blur">
           <ul className="hidden sm:flex gap-8 lg:gap-12 text-white/25">
             <Link
               href="#home"
@@ -17,7 +17,18 @@ export default function Header() {
             >
               Home
             </Link>
-
+            <Link
+              href="#"
+              className={`${sectionInView === "work" && "text-white"} `}
+            >
+              Previous Work
+            </Link>
+            <Link
+              href="#about"
+              className={`${sectionInView === "about" && "text-white"} `}
+            >
+              About
+            </Link>
             <Link
               href="#contact"
               className={`${sectionInView === "contact" && "text-white"} `}
