@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { easeIn, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useView } from "@/contexts/ViewContext";
+import { useView } from "@/context/ViewContext";
 
 export default function Hero() {
   const animateIn1 = {
@@ -73,7 +73,7 @@ export default function Hero() {
           animate={animateIn1}
         >
           <Image
-            src="/nick.png"
+            src={"/userPic.png"}
             priority
             fill
             alt="Nicks picture"

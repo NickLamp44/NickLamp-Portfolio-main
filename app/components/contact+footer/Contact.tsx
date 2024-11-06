@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Syne } from "next/font/google";
-import { useView } from "@/contexts/ViewContext";
+import { useView } from "@/context/ViewContext";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";

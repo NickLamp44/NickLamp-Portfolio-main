@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Syne } from "next/font/google";
 import Image from "next/image";
-import { useView } from "@/contexts/ViewContext";
+import { useView } from "@/context/ViewContext";
 import { useEffect } from "react";
 
 function NotFound() {
