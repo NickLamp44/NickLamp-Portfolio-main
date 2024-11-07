@@ -16,7 +16,7 @@ export default function Projects() {
       about:
         "A website that can be used to research and collect pokemon data. It features a search bar for finding pokemon by name, a filter for sorting by type, and a detailed view for each pokemon. The site is fully responsive and has a dark mode.",
       stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-      img: "/offset-folio.svg",
+      img: "/pokedex.svg",
     },
     {
       title: "Trail Tuned",
