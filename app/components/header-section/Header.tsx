@@ -18,8 +18,8 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#"
-              className={`${sectionInView === "work" && "text-white"} `}
+              href="#prvExp"
+              className={`${sectionInView === "projects" && "text-white"} `}
             >
               Previous Work
             </Link>

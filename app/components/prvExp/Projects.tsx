@@ -15,27 +15,27 @@ export default function Projects() {
       liveLink: "#/",
       about:
         "A website that can be used to research and collect pokemon data. It features a search bar for finding pokemon by name, a filter for sorting by type, and a detailed view for each pokemon. The site is fully responsive and has a dark mode.",
-      stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-      img: "/pokedex.svg",
+      stack: ["HTML", "CSS", "JavaScript", "API requests"],
+      img: "/pokedex.png",
     },
     {
-      title: "Trail Tuned",
+      title: "Pong",
       gitLink: "#",
       liveLink: "#/",
       about:
-        "An app that helps mountain bike riders fine tune their suspension settings. It features a calculator for determining the correct suspension settings based on rider weight, bike model, and riding style. The app also includes a blog for sharing tips and tricks.",
-      stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-      img: "/shortly.svg",
+        "A simple pong game built with React. It features a start screen, game screen, pause function, and end screen. The game is fully responsive and can be played on both desktop and mobile devices.",
+      stack: ["React", "Javascript"],
+      img: "/pong.png",
     },
-    {
-      title: "Where in the world",
-      gitLink: "#",
-      liveLink: "#",
-      about:
-        "A fun tool for checking information about any country in the world such as the country’s native name, currency, population,  border countries etc. It features dynamic routing for each country and theme switch.",
-      stack: ["react", "react-router", "javascript", "tailwindcss"],
-      img: "/witw.svg",
-    },
+    // {
+    //   title: "Where in the world :)",
+    //   gitLink: "#",
+    //   liveLink: "#",
+    //   about:
+    //     "A fun tool for checking information about any country in the world such as the country’s native name, currency, population,  border countries etc. It features dynamic routing for each country and theme switch.",
+    //   stack: ["react", "react-router", "javascript", "tailwindcss"],
+    //   img: "/witw.svg",
+    // },
   ];
 
   const { ref, inView } = useInView({
