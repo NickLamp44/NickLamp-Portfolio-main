@@ -1,2 +1,6 @@
 start up 
-next build
+npm run build
+
+
+test locally 
+npm run dev

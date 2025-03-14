@@ -1,0 +1,26 @@
+ <Link
+              href="#hero"
+              className={`${sectionInView === "Hero" && "text-white"} `}
+            >
+              Home
+            </Link>
+
+            <Link
+              href="#projects"
+              className={`${sectionInView === "Projects" && "text-white"} `}
+            >
+              Prior Work
+            </Link>
+            <Link
+              href="#about"
+              className={`${sectionInView === "About" && "text-white"} `}
+            >
+              About
+            </Link>
+            <Link
+              href="#contact"
+              className={`${sectionInView === "Contact" && "text-white"} `}
+            >
+              Contact
+            </Link>
+            

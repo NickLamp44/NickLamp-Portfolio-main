@@ -87,7 +87,7 @@ export default function Contact() {
       <section
         ref={ref}
         id="contact"
-        className={`overflow-hidden card mt-12 sm:mt-16 md:mt-[100px] px-6 py-4 md:py-10 lg:py-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-gradient-to-r from-[#d9d9d91f] to-[#7373731f] transition-all duration-500 ${
+        className={`overflow-hidden card mt-12 sm:mt-16 md:mt-[100px] px-6 py-4 md:py-10 lg:py-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-gradient-to-r from-[#1d094b] to-[#380770] transition-all duration-500 ${
           formDisplay ? "h-auto" : "h-[50px]"
         }`}
       >
@@ -146,7 +146,7 @@ export default function Contact() {
                         message: "Please enter a valid name.",
                       },
                     })}
-                    className="bg-gradient-to-r from-[#1b0944] to-[#1c0550] rounded-md  outline-none py-1 pl-2"
+                    className="bg-gradient-to-r from-[#1b0944] to-[#1c0550] rounded-md  outline-none py-1 pl-2 focus:outline-white focus:ring-2 focus:ring-white"
                   />
                   {errors?.userName && (
                     <span className="text-red-400 text-xs">
@@ -171,7 +171,7 @@ export default function Contact() {
                         message: "Please provide a valid email address",
                       },
                     })}
-                    className="bg-gradient-to-r from-[#1b0944] to-[#1c0550] rounded-md outline-none py-1 pl-2"
+                    className="bg-gradient-to-r from-[#1b0944] to-[#1c0550] rounded-md outline-none py-1 pl-2 focus:outline-white focus:ring-2 focus:ring-white"
                   />
                   {errors?.userEmail && (
                     <span className="text-red-400 text-xs">
@@ -194,7 +194,7 @@ export default function Contact() {
                     })}
                     rows={4}
                     cols={50}
-                    className="bg-gradient-to-r from-[#1b0944] to-[#1c0550] rounded-md outline-none py-1 pl-2"
+                    className="bg-gradient-to-r from-[#1b0944] to-[#1c0550] rounded-md outline-none py-1 pl-2 focus:outline-white focus:ring-1 focus:ring-white"
                   />
                   {errors?.userMessage && (
                     <span className="text-red-400 text-xs">

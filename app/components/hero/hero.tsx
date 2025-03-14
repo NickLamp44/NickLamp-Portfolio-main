@@ -68,16 +68,17 @@ export default function Hero() {
       <div data-blobity-tooltip="Soft man">
         <motion.div
           ref={imgRef}
-          className="h-image flex items-center w-[310px] h-[380px] xl:w-[390px] xl:h-[470px] justify-center relative"
+          className="flex items-center justify-center w-[310px] h-[380px] xl:w-[390px] xl:h-[470px] relative overflow-hidden rounded-3xl shadow-lg"
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
           <Image
-            src={"/userPic.png"}
+            src="/userPic.png"
+            width={390}
+            height={470}
             priority
-            fill
-            alt="Nicks picture"
-            className="bg-image-radial"
+            alt="Nick's picture"
+            className="object-cover w-full h-full rounded-3xl"
           />
         </motion.div>
       </div>

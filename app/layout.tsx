@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     "Massachusetts",
     "React developer",
     "Next.js developer",
-
     "software",
     "software developer",
     "software engineer",
