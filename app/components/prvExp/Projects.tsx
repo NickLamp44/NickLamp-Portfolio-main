@@ -10,7 +10,7 @@ export default function Projects() {
 
   const Projects = [
     {
-      title: "Pokedex",
+      title: "Tool Box Wars",
       gitLink: "#",
       liveLink: "#/",
       about:
@@ -19,7 +19,7 @@ export default function Projects() {
       img: "/pokedex.png",
     },
     {
-      title: "Pong",
+      title: "Circle Up Chat Room",
       gitLink: "#",
       liveLink: "#/",
       about:
@@ -27,15 +27,25 @@ export default function Projects() {
       stack: ["React", "Javascript"],
       img: "/pong.png",
     },
-    // {
-    //   title: "Where in the world :)",
-    //   gitLink: "#",
-    //   liveLink: "#",
-    //   about:
-    //     "A fun tool for checking information about any country in the world such as the country’s native name, currency, population,  border countries etc. It features dynamic routing for each country and theme switch.",
-    //   stack: ["react", "react-router", "javascript", "tailwindcss"],
-    //   img: "/witw.svg",
-    // },
+
+    {
+      title: "NicksFlix",
+      gitLink: "#",
+      liveLink: "#/",
+      about:
+        "A simple pong game built with React. It features a start screen, game screen, pause function, and end screen. The game is fully responsive and can be played on both desktop and mobile devices.",
+      stack: [
+        "Angular",
+        "Javascript",
+        "AWS",
+        "EC2",
+        "S3",
+        "MongoDB",
+        "Heroku",
+        "Stuff",
+      ],
+      img: "/pong.png",
+    },
   ];
 
   const { ref, inView } = useInView({
@@ -53,7 +63,7 @@ export default function Projects() {
       ref={ref}
       id="work"
     >
-      <Title>Projects</Title>
+      <Title>What Ive built</Title>
       {Projects.map((project, index) => (
         <Card
           key={index}
