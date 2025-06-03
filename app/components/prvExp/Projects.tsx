@@ -11,40 +11,31 @@ export default function Projects() {
   const Projects = [
     {
       title: "Tool Box Wars",
-      gitLink: "#",
-      liveLink: "#/",
+      gitLink: "https://github.com/NickLamp44/tool-box-warz",
+      liveLink: "https://tool-box-warz.vercel.app/",
       about:
-        "A website that can be used to research and collect pokemon data. It features a search bar for finding pokemon by name, a filter for sorting by type, and a detailed view for each pokemon. The site is fully responsive and has a dark mode.",
-      stack: ["HTML", "CSS", "JavaScript", "API requests"],
-      img: "/pokedex.png",
+        "A personal passions project centered around my love for riding and maintaining Mountain Bikes. Its used as a space for people to learn and share knowledge about everything from indexing a derailleur to rebuilding a Fork Damper. People can also show off thier custom Tool Boxes in the ShowCASE section. People eventually vote for the yearly TBW awards cullmintating in the ToolBox of the Year award. We also have some merch for sale.",
+      stack: ["React", "MaterialDesign", "JavaScript", "Firebase"],
+      img: "/TBWpreview.png",
     },
     {
       title: "Circle Up Chat Room",
-      gitLink: "#",
+      gitLink: "https://github.com/NickLamp44/chatApp",
       liveLink: "#/",
       about:
-        "A simple pong game built with React. It features a start screen, game screen, pause function, and end screen. The game is fully responsive and can be played on both desktop and mobile devices.",
-      stack: ["React", "Javascript"],
-      img: "/pong.png",
+        "Circle Up started as a bootcamp project that was instramental in my journey in becoming a full stack web developer. It was my inital exposure to amazon web services",
+      stack: ["React", "AWS", "JavaScript", "Vite", ""],
+      img: "/CircleUp.png",
     },
 
     {
       title: "NicksFlix",
-      gitLink: "#",
+      gitLink: "https://github.com/NickLamp44/NicksFlixAngular",
       liveLink: "#/",
       about:
-        "A simple pong game built with React. It features a start screen, game screen, pause function, and end screen. The game is fully responsive and can be played on both desktop and mobile devices.",
-      stack: [
-        "Angular",
-        "Javascript",
-        "AWS",
-        "EC2",
-        "S3",
-        "MongoDB",
-        "Heroku",
-        "Stuff",
-      ],
-      img: "/pong.png",
+        "My Original project... exposed me to MongoDB, Heroku, React & Angular",
+      stack: ["Angular", "Javascript", "AWS", "EC2", "S3", "MongoDB", "Heroku"],
+      img: "/NicksFlix.png",
     },
   ];
 
