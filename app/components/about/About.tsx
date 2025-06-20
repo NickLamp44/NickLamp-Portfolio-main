@@ -71,7 +71,7 @@ export default function About() {
             <br className="hidden md:block" />
             <Link
               className="underline"
-              href="/Resume.pdf"
+              href="/Nick_Lamparelli_.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="Resume.pdf"
