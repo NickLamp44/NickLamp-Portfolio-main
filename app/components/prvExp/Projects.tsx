@@ -10,7 +10,7 @@ export default function Projects() {
 
   const Projects = [
     {
-      title: "Tool Box Wars",
+      title: "Tool Box Warz",
       gitLink: "https://github.com/NickLamp44/tool-box-warz",
       liveLink: "https://tool-box-warz.vercel.app/",
       about:
@@ -24,7 +24,7 @@ export default function Projects() {
       liveLink: "#/",
       about:
         "Circle Up started as a bootcamp project that was instramental in my journey in becoming a full stack web developer. It was my inital exposure to amazon web services",
-      stack: ["React", "AWS", "JavaScript", "Vite", ""],
+      stack: ["React", "AWS", "JavaScript", "Vite", "Database Management"],
       img: "/CircleUp.png",
     },
 
@@ -34,7 +34,14 @@ export default function Projects() {
       liveLink: "#/",
       about:
         "My Original project... exposed me to MongoDB, Heroku, React & Angular",
-      stack: ["Angular", "Javascript", "AWS", "EC2", "S3", "MongoDB", "Heroku"],
+      stack: [
+        "Angular",
+        "React",
+        "Javascript",
+        "MongoDB",
+        "Heroku",
+        "API Requests",
+      ],
       img: "/NicksFlix.png",
     },
   ];

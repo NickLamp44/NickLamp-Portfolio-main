@@ -35,51 +35,55 @@ export default function Contact() {
   const { formState, register, handleSubmit, reset } = useForm();
   const { errors } = formState;
 
-  // For email.js
   const formRef = useRef<HTMLFormElement>(null);
 
   function onSubmit(data: any) {
-    console.log(data);
+    if (!formRef.current) return;
+
+    const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID!;
+    const ownerTemplateID = process.env.NEXT_PUBLIC_NICK_TEMPLATE_ID!;
+    const userTemplateID = process.env.NEXT_PUBLIC_CONFIRMATION_TEMPLATE_ID!;
+    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY!;
 
     emailjs
-      .sendForm(
-        `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
-        `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
-        formRef.current as HTMLFormElement,
-        {
-          publicKey: `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`,
-        }
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          toast.success("Message sent", {
-            position: "bottom-left",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: "dark",
-            className: `custom-toast font-kumbhSans`,
-          });
-          reset();
-          setTimeout(() => setFormDisplay(!formDisplay), 5000);
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          toast.error("Message not sent, check your network", {
-            position: "bottom-left",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: "dark",
-            className: `custom-toast font-kumbhSans`,
-          });
-        }
-      );
+      .sendForm(serviceID, ownerTemplateID, formRef.current, { publicKey })
+      .then(() => {
+        console.log("Message to Nick sent");
+
+        emailjs
+          .send(
+            serviceID,
+            userTemplateID,
+            {
+              userName: data.userName,
+              userEmail: data.userEmail,
+            },
+            { publicKey }
+          )
+          .then(() => {
+            console.log("Auto-reply sent to user");
+          })
+          .catch((err) => console.error("Auto-reply failed", err));
+
+        toast.success("Message sent", {
+          position: "bottom-left",
+          autoClose: 3000,
+          theme: "dark",
+          className: `custom-toast font-kumbhSans`,
+        });
+
+        reset();
+        setTimeout(() => setFormDisplay(false), 5000);
+      })
+      .catch((error) => {
+        console.log("FAILED...", error.text);
+        toast.error("Message not sent, check your network", {
+          position: "bottom-left",
+          autoClose: 3000,
+          theme: "dark",
+          className: `custom-toast font-kumbhSans`,
+        });
+      });
   }
 
   return (
