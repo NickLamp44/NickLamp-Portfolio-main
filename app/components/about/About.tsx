@@ -18,7 +18,7 @@ export default function About() {
   return (
     <section ref={ref} className="pt-24 md:pt-{150px" id="about">
       <h2 className="uppercase  antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80 ">
-        I Love to Build Things
+        I Love to Build
       </h2>
 
       {/* About section Container  */}
