@@ -76,7 +76,7 @@ export default function Projects() {
       ref={ref}
       id="work"
     >
-      <Title>What I've built</Title>
+      <Title>What I&apos;ve built</Title>
       {Projects.map((project, index) => (
         <Card
           key={index}
