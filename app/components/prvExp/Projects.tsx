@@ -18,22 +18,22 @@ export default function Projects() {
       stack: ["React", "MaterialDesign", "JavaScript", "Firebase"],
       img: "/TBWpreview.png",
     },
-    {
-      title: "Circle Up Chat Room",
-      gitLink: "https://github.com/NickLamp44/chatApp",
-      liveLink: "#/",
-      about:
-        "Circle Up started as a bootcamp project that was instramental in my journey in becoming a full stack web developer. It was my inital exposure to amazon web services",
-      stack: ["React", "AWS", "JavaScript", "Vite", "Database Management"],
-      img: "/CircleUp.png",
-    },
+    // {
+    //   title: "Circle Up Chat Room",
+    //   gitLink: "https://github.com/NickLamp44/chatApp",
+    //   liveLink: "#/",
+    //   about:
+    //     "Circle Up started as a bootcamp project that was instramental in my journey in becoming a full stack web developer. It was my inital exposure to amazon web services",
+    //   stack: ["React", "AWS", "JavaScript", "Vite", "Database Management"],
+    //   img: "/CircleUp.png",
+    // },
 
     {
       title: "NicksFlix",
-      gitLink: "https://github.com/NickLamp44/NicksFlixAngular",
-      liveLink: "#/",
+      gitLink: "https://github.com/NickLamp44/MyFlix-Client",
+      liveLink: "https://nicksflix.netlify.app/",
       about:
-        "My Original project... exposed me to MongoDB, Heroku, React & Angular",
+        "My Original project... exposed me to MongoDB, Heroku, React. Build a second version Available here using Angular ",
       stack: [
         "Angular",
         "React",
@@ -44,6 +44,21 @@ export default function Projects() {
       ],
       img: "/NicksFlix.png",
     },
+    // {
+    //   title: "AWS Serverless Project",
+    //   gitLink: "",
+    //   liveLink: "",
+    //   about: "Case study ",
+    //   stack: [
+    //     "Cloud Computing",
+    //     "Serverless",
+    //     "Auto Scaling",
+    //     "Load Balancing",
+    //     "AWS",
+    //     "S2",
+    //   ],
+    //   img: "/black.png",
+    // },
   ];
 
   const { ref, inView } = useInView({
@@ -61,7 +76,7 @@ export default function Projects() {
       ref={ref}
       id="work"
     >
-      <Title>What Ive built</Title>
+      <Title>What I've built</Title>
       {Projects.map((project, index) => (
         <Card
           key={index}
