@@ -28,20 +28,32 @@ export default function Card({
   });
 
   return (
+    // Project Container
     <div
       ref={ref}
-      className={`w-full rounded-[20px] std-backdrop-blur bg-gradient-to-r from-[#1d094b] to-[#380770] grid grid-cols-1 items-start lg:grid-cols-12 xl:flex gap-5 xl:gap-10 p-6 duration-700 ${
+      className={`w-full  rounded-3xl  bg-gradient-to-r from-[#1d094b] to-[#380770] grid grid-cols-1 items-start lg:grid-cols-12 gap-5 xl:gap-10 p-6 duration-700 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       }`}
     >
-      <Image
-        src={img}
-        width={420}
-        height={700}
-        alt="work"
-        className="rounded-[10px] w-full lg:col-span-5"
-      />
-      <div className="flex flex-col gap-4 lg:col-span-7">
+
+      {/* Project Image Container  */}
+      <div className="lg:col-span-4 rounded-[10px] overflow-hidden flex-shrink-0">
+        <Image
+          src={img || "/placeholder.svg"}
+          alt="work"
+          width={600} 
+          height={400} 
+          style={{
+            width: "100%", 
+            height: "auto",
+            objectFit: "cover", 
+          }}
+          className="rounded-[10px]" 
+        />
+      </div>
+
+      {/* Text content  */}
+      <div className="flex flex-col gap-4 lg:col-span-8">
         <div className="flex items-center justify-between">
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
             {title}
@@ -75,7 +87,11 @@ export default function Card({
             </Link>
           </div>
         </div>
+
+        {/* Project Summary */}
         <p className="text-base text-white/70">{about}</p>
+
+        {/* Project Stack Tags */}
         <div className="flex gap-3 md:gap-4 flex-wrap">
           {stack.map((tech, index) => (
             <Tag key={index}>{tech}</Tag>

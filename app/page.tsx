@@ -2,7 +2,7 @@
 import Hero from "./components/hero/hero";
 import Projects from "./components/prvExp/Projects";
 import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
+// import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <About />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   );

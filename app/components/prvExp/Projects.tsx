@@ -15,7 +15,7 @@ export default function Projects() {
       liveLink: "https://tool-box-warz.vercel.app/",
       about:
         "A personal passions project centered around my love for riding and maintaining Mountain Bikes. Its used as a space for people to learn and share knowledge about everything from indexing a derailleur to rebuilding a Fork Damper. People can also show off thier custom Tool Boxes in the ShowCASE section. People eventually vote for the yearly TBW awards cullmintating in the ToolBox of the Year award. We also have some merch for sale.",
-      stack: ["React", "MaterialDesign", "JavaScript", "Firebase"],
+      stack: ["React", "Material Design", "JavaScript", "Firebase"],
       img: "/TBWpreview.png",
     },
     // {
@@ -48,13 +48,16 @@ export default function Projects() {
     //   title: "AWS Serverless Project",
     //   gitLink: "",
     //   liveLink: "",
-    //   about: "Case study ",
+    //   about:
+    //     "As a capstone project for a cloud computing course, I built a fully automated image resizer that processes images using AWS Lambda triggered by uploads to Amazon S3. The architecture eliminates the need for manual image handling or 24/7 server management, providing scalable, cost-effective image processing ideal for modern web apps.",
     //   stack: [
+    //     "Case Study",
     //     "Cloud Computing",
     //     "Serverless",
     //     "Auto Scaling",
     //     "Load Balancing",
     //     "AWS",
+    //     "EC2",
     //     "S2",
     //   ],
     //   img: "/black.png",
