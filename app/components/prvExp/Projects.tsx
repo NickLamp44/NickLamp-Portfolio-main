@@ -10,9 +10,9 @@ export default function Projects() {
 
   const Projects = [
     {
-      title: "Tool Box Warz",
+      title: "The Bike Bench",
       gitLink: "https://github.com/NickLamp44/tool-box-warz",
-      liveLink: "https://tool-box-warz.vercel.app/",
+      liveLink: "https://the-bike-bench.vercel.app/",
       about:
         "A personal passions project centered around my love for riding and maintaining Mountain Bikes. Its used as a space for people to learn and share knowledge about everything from indexing a derailleur to rebuilding a Fork Damper. People can also show off thier custom Tool Boxes in the ShowCASE section. People eventually vote for the yearly TBW awards cullmintating in the ToolBox of the Year award. We also have some merch for sale.",
       stack: ["React", "Material Design", "JavaScript", "Firebase"],
@@ -28,22 +28,22 @@ export default function Projects() {
     //   img: "/CircleUp.png",
     // },
 
-    {
-      title: "NicksFlix",
-      gitLink: "https://github.com/NickLamp44/MyFlix-Client",
-      liveLink: "https://nicksflix.netlify.app/",
-      about:
-        "My Original project... exposed me to MongoDB, Heroku, React. Build a second version Available here using Angular ",
-      stack: [
-        "Angular",
-        "React",
-        "Javascript",
-        "MongoDB",
-        "Heroku",
-        "API Requests",
-      ],
-      img: "/NicksFlix.png",
-    },
+    // {
+    //   title: "NicksFlix",
+    //   gitLink: "https://github.com/NickLamp44/MyFlix-Client",
+    //   liveLink: "https://nicksflix.netlify.app/",
+    //   about:
+    //     "My Original project... exposed me to MongoDB, Heroku, React. Build a second version Available here using Angular ",
+    //   stack: [
+    //     "Angular",
+    //     "React",
+    //     "Javascript",
+    //     "MongoDB",
+    //     "Heroku",
+    //     "API Requests",
+    //   ],
+    //   img: "/NicksFlix.png",
+    // },
     // {
     //   title: "AWS Serverless Project",
     //   gitLink: "",
