@@ -14,8 +14,8 @@ export default function Projects() {
       gitLink: "https://github.com/NickLamp44/TrailTuned",
       liveLink: "https://trail-tuned.vercel.app/",
       about:
-        "A progressive web app designed to run on mobile devices, tablets, and desktops. My second passion project centered around web development and bike technology. This time much more focused on the often overwhelming and mystifying dark art that is modern Mountain Bike Suspension set up. With this app I hope to ease a riders journey into dialing in their bike's suspension. Built using Next.js, database on SupaBase, and styled with typescript",
-      stack: ["Next.js", "SupaBase", "TypeScript", "Tailwind"],
+        "TrailTuned is a full-stack Progressive Web App that helps mountain bikers take a structured, data-driven approach to suspension tuning. Instead of relying on memory or scattered notes, riders can log precise fork and shock settings, track changes over time, and connect those adjustments to real-world ride data.",
+      stack: ["Next.js", "SupaBase", "TypeScript", "Tailwind", "strava.api"],
       img: "/trailTuned.png",
     },
     // {
