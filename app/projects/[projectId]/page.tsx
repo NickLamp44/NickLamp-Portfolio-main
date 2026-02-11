@@ -198,7 +198,7 @@ export default function ProjectDetailPage({
                 Tech Stack
               </h3>
               <div className="flex flex-wrap gap-2">
-                {project.stack.map((tech, index) => (
+                {project.stack.map((tech: string, index: number) => (
                   <span
                     key={index}
                     className="px-3 py-1 text-sm rounded-full bg-purple-900/50 text-purple-200 border border-purple-700"
@@ -232,7 +232,7 @@ export default function ProjectDetailPage({
         <div className="rounded-2xl p-8 bg-gradient-to-br from-[#1d094b] to-[#380770]">
           <h2 className="text-3xl font-bold mb-6">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {project.keyFeatures.map((feature, index) => (
+            {project.keyFeatures.map((feature: string, index: number) => (
               <div
                 key={index}
                 className="flex items-start gap-3 p-4 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
