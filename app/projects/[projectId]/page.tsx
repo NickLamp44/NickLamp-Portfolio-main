@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,11 +9,12 @@ import { projectsData } from "@/data/projects";
 export default function ProjectDetailPage({
   params,
 }: {
-  params: { projectId: string };
+  params: Promise<{ projectId: string }>;
 }) {
   const router = useRouter();
+  const { projectId } = use(params);
   const projectList = Object.entries(projectsData).find(
-    ([id]) => id === params.projectId
+    ([id]) => id === projectId
   );
   const project = projectList ? projectList[1] : null;
 
