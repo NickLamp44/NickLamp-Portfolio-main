@@ -13,10 +13,7 @@ export default function ProjectDetailPage({
 }) {
   const router = useRouter();
   const { projectId } = use(params);
-  const projectList = Object.entries(projectsData).find(
-    ([id]) => id === projectId
-  );
-  const project = projectList ? projectList[1] : null;
+  const project = projectsData.find((proj) => proj.id === projectId);
 
   if (!project) {
     return (
