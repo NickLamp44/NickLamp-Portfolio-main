@@ -41,7 +41,7 @@ export default function Hero() {
     <section
       ref={ref}
       className="pt-36 sm:pt-0 flex flex-col sm:flex-row h-dvh items-center gap-6 sm:justify-between"
-      id="hero"
+      id="home"
     >
       <div className="text sm:w-[60%]">
         <motion.h1
