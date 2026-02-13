@@ -7,10 +7,20 @@ import cfLogo from "../../../public/cfLogo.png";
 const TimelineData = [
   {
     companyImg: cfLogo,
+    jobTitle: "Sales, Service, & Operations",
+    company: "Landrys Bicycles",
+    jobType: "Part-time",
+    duration: "November 2024 - ",
+    desc: [
+      "In my role at Landry’s Bicycles, I was a key member in the development and operation of a consignment intake system for used bikes that transformed Google Form submissions into structured, reliable records that could be ingested into Ascend RMS (our retail commerce platform)."," Using Google Forms, Excel-based processing pipelines, and custom SQL queries, I validated, cleaned, and standardized incoming data before creating unique SKUs tied to each bike’s serial number.","This enabled accurate lifecycle tracking of inventory, clear association with the original seller.  ",
+    ],
+  },
+  {
+    companyImg: cfLogo,
     jobTitle: "Student",
     company: "Career Foundry",
     jobType: "Part-time",
-    duration: "July 2024 - Dec 2024",
+    duration: "July 2024 - May 2025",
     desc: [
       "Gained expertise in front-end frameworks such as React.js, BootStrap, and Vue.js, implementing dynamic user interfaces and enhancing user experience across multiple projects.",
       "Developed a solid understanding of HTML, CSS, and JavaScript by building various web applications and designing responsive landing pages, focusing on clean and efficient code.",

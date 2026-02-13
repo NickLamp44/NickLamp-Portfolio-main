@@ -2,11 +2,13 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import Tag from "./Tag";
 import { useInView } from "react-intersection-observer";
 
 export default function Card({
+  projectId,
   title,
   img,
   gitLink,
@@ -14,6 +16,7 @@ export default function Card({
   about,
   stack,
 }: {
+  projectId: string;
   img: string;
   title: string;
   gitLink?: string;
@@ -21,34 +24,39 @@ export default function Card({
   about: string;
   stack: string[];
 }) {
+  const router = useRouter();
   const { ref, inView } = useInView({
     threshold: 0.3,
     rootMargin: "-100px 0px",
     triggerOnce: true,
   });
 
+  const handleCardClick = () => {
+    router.push(`/projects/${projectId}`);
+  };
+
   return (
     // Project Container
     <div
       ref={ref}
-      className={`w-full  rounded-3xl  bg-gradient-to-r from-[#1d094b] to-[#380770] grid grid-cols-1 items-start lg:grid-cols-12 gap-5 xl:gap-10 p-6 duration-700 ${
+      onClick={handleCardClick}
+      className={`w-full rounded-3xl bg-gradient-to-r from-[#1d094b] to-[#380770] grid grid-cols-1 items-start lg:grid-cols-12 gap-5 xl:gap-10 p-6 duration-700 cursor-pointer hover:shadow-lg hover:shadow-purple-500/50 transition-all ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       }`}
     >
-
       {/* Project Image Container  */}
       <div className="lg:col-span-4 rounded-[10px] overflow-hidden flex-shrink-0">
         <Image
           src={img || "/placeholder.svg"}
           alt="work"
-          width={600} 
-          height={400} 
+          width={600}
+          height={400}
           style={{
-            width: "100%", 
+            width: "100%",
             height: "auto",
-            objectFit: "cover", 
+            objectFit: "cover",
           }}
-          className="rounded-[10px]" 
+          className="rounded-[10px]"
         />
       </div>
 
@@ -58,12 +66,15 @@ export default function Card({
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
             {title}
           </h2>
-          <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
+          <div
+            className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Link
               href={liveLink}
               className="rounded-full bg-icon-radial p-3 hover:bg-red"
               target="_blank"
-              aria-label="View Github Repo"
+              aria-label="View Live Demo"
               data-blobity-radius="34"
               data-blobity-magnetic="true"
             >
@@ -73,7 +84,7 @@ export default function Card({
               href={`${gitLink ? gitLink : "#"}`}
               className="rounded-full bg-icon-radial p-3"
               target="_blank"
-              aria-label="View Live Demo"
+              aria-label="View Github Repo"
               data-blobity-radius="34"
               data-blobity-magnetic="true"
               {...(!gitLink && {
